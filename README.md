@@ -9,7 +9,7 @@ const rewireSourceMap = require('react-app-rewire-source-map-loader')
 
 module.exports = function override(config, env) {
     // ...
-    config = rewireSourceMap(config, env)
+    rewireSourceMap(config, env)
     // ...
     return config
 }
